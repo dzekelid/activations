@@ -16,23 +16,41 @@ consumes:
 - application/json
 paths:
   /reward_program_activation:
-    get:
-      summary: List reward program activations
-      description: Get a list of reward program activations matching the specified
-        filters.
-      operationId: fetchRewardProgramActivations
-      x-api-path-slug: reward-program-activation-get
+    post:
+      summary: Create a reward program activation
+      description: Create a reward program activation for a patient. There can only
+        be one activation for a patient for a given reward program.
+      operationId: createRewardProgramActivation
+      x-api-path-slug: reward-program-activation-post
       parameters:
-      - in: query
-        name: filter[patient]
-        description: Patient identifier
+      - in: body
+        name: body
+        schema:
+          $ref: '#/definitions/holder'
       responses:
         200:
           description: OK
       tags:
       - Wearables
-      - List
       - Reward
       - Program
-      - Activations
+      - Activation
+  /reward_program_activation/{id}:
+    get:
+      summary: Get a reward program activation
+      description: Get a reward program activationrecord by id.
+      operationId: fetchRewardProgramActivation
+      x-api-path-slug: reward-program-activationid-get
+      parameters:
+      - in: path
+        name: id
+        description: Reward program activation identifier
+      responses:
+        200:
+          description: OK
+      tags:
+      - Wearables
+      - Reward
+      - Program
+      - Activation
 ---
