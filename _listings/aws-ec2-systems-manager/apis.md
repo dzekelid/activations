@@ -32,6 +32,46 @@ apis:
     Data, Service API
   properties:
   - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/activations/master/_listings/aws-ec2-systems-manager/actioncreateactivation-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/activations/master/_listings/aws-ec2-systems-manager/actioncreateactivation-get-openapi.md
+- name: Amazon EC2 Systems Manager API
+  x-api-slug: amazon-ec2-systems-manager-api
+  description: ""
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Compute_AmazonEC2.png
+  humanURL: https://aws.amazon.com/ec2/systems-manager/
+  baseURL: :///
+  tags: Amazon Web Services, Management, Cloud, Stack Network, Orchestration, API
+    Service Provider, API Service Provider, API Provider, Deployments, Profiles, Relative
+    Data, Service API
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/activations/master/_listings/aws-ec2-systems-manager/actioncreateactivation-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/activations/master/_listings/aws-ec2-systems-manager/actioncreateactivation-get-openapi.md
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/activations/master/_listings/aws-ec2-systems-manager/actiondeleteactivation-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/activations/master/_listings/aws-ec2-systems-manager/actiondeleteactivation-get-openapi.md
+- name: Amazon EC2 Systems Manager API
+  x-api-slug: amazon-ec2-systems-manager-api
+  description: ""
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Compute_AmazonEC2.png
+  humanURL: https://aws.amazon.com/ec2/systems-manager/
+  baseURL: :///
+  tags: Amazon Web Services, Management, Cloud, Stack Network, Orchestration, API
+    Service Provider, API Service Provider, API Provider, Deployments, Profiles, Relative
+    Data, Service API
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/activations/master/_listings/aws-ec2-systems-manager/actioncreateactivation-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/activations/master/_listings/aws-ec2-systems-manager/actioncreateactivation-get-openapi.md
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/activations/master/_listings/aws-ec2-systems-manager/actiondeleteactivation-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/activations/master/_listings/aws-ec2-systems-manager/actiondeleteactivation-get-openapi.md
+  - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/activations/master/_listings/aws-ec2-systems-manager/actiondescribeactivations-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/activations/master/_listings/aws-ec2-systems-manager/actiondescribeactivations-get-openapi.md
