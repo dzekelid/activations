@@ -3,8 +3,9 @@ swagger: "2.0"
 x-collection-name: Twine
 x-complete: 0
 info:
-  title: Twine List reward program activations
-  description: Get a list of reward program activations matching the specified filters.
+  title: Twine Create a reward program activation
+  description: Create a reward program activation for a patient. There can only be
+    one activation for a patient for a given reward program.
   version: 7.18.0
 host: api.twinehealth.com
 basePath: /pub
@@ -16,25 +17,25 @@ consumes:
 - application/json
 paths:
   /reward_program_activation:
-    get:
-      summary: List reward program activations
-      description: Get a list of reward program activations matching the specified
-        filters.
-      operationId: fetchRewardProgramActivations
-      x-api-path-slug: reward-program-activation-get
+    post:
+      summary: Create a reward program activation
+      description: Create a reward program activation for a patient. There can only
+        be one activation for a patient for a given reward program.
+      operationId: createRewardProgramActivation
+      x-api-path-slug: reward-program-activation-post
       parameters:
-      - in: query
-        name: filter[patient]
-        description: Patient identifier
+      - in: body
+        name: body
+        schema:
+          $ref: '#/definitions/holder'
       responses:
         200:
           description: OK
       tags:
       - Wearables
-      - List
       - Reward
       - Program
-      - Activations
+      - Activation
 x-streamrank:
   polling_total_time_average: 0
   polling_size_download_average: 0

@@ -21,6 +21,36 @@ modified: "2018-08-27"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/activations/master/_listings/aws-ec2-systems-manager/apis.md
 specificationVersion: "0.14"
 apis:
+- name: AWS EC2 Systems Manager API - Create Activation
+  x-api-slug: actioncreateactivation-get
+  description: |-
+    Registers your on-premises server or virtual machine with Amazon EC2 so that you can manage
+       these resources using Run Command.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Compute_AmazonEC2.png
+  humanURL: https://aws.amazon.com/ec2/systems-manager/
+  baseURL: :///
+  tags: Amazon Web Services, Management, Cloud, Stack Network, Orchestration, API
+    Service Provider, API Service Provider, API Provider, Deployments, Profiles, Relative
+    Data, Service API
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/activations/master/_listings/aws-ec2-systems-manager/actioncreateactivation-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/activations/master/_listings/aws-ec2-systems-manager/actioncreateactivation-get-openapi.md
+- name: AWS EC2 Systems Manager API - Delete Activation
+  x-api-slug: actiondeleteactivation-get
+  description: Deletes an activation.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Compute_AmazonEC2.png
+  humanURL: https://aws.amazon.com/ec2/systems-manager/
+  baseURL: :///
+  tags: Amazon Web Services, Management, Cloud, Stack Network, Orchestration, API
+    Service Provider, API Service Provider, API Provider, Deployments, Profiles, Relative
+    Data, Service API
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/activations/master/_listings/aws-ec2-systems-manager/actiondeleteactivation-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/activations/master/_listings/aws-ec2-systems-manager/actiondeleteactivation-get-openapi.md
 - name: AWS EC2 Systems Manager API - Describe Activations
   x-api-slug: actiondescribeactivations-get
   description: |-

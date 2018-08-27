@@ -17,16 +17,27 @@ modified: "2018-08-27"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/activations/master/_listings/twine/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Twine - List reward program activations
-  x-api-slug: reward-program-activation-get
-  description: Get a list of reward program activations matching the specified filters.
+- name: Twine - Create a reward program activation
+  x-api-slug: reward-program-activation-post
+  description: Create a reward program activation for a patient. There can only be
+    one activation for a patient for a given reward program.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/twinehealth.png
   humanURL: http://twinehealth.com
   baseURL: https://api.twinehealth.com//pub
   tags: Wearables, Healthcare, Relative Data, Service API
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/activations/master/_listings/twine/reward-program-activation-get-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/activations/master/_listings/twine/reward-program-activation-post-openapi.md
+- name: Twine - Get a reward program activation
+  x-api-slug: reward-program-activationid-get
+  description: Get a reward program activationrecord by id.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/twinehealth.png
+  humanURL: http://twinehealth.com
+  baseURL: https://api.twinehealth.com//pub
+  tags: Wearables, Healthcare, Relative Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/activations/master/_listings/twine/reward-program-activationid-get-openapi.md
 x-common:
 - type: x-api-gallery
   url: http://twilio.api.gallery.streamdata.io
